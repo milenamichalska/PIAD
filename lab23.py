@@ -61,9 +61,6 @@ df2.iloc[1,2] = 10
 # df2[df2:0] = -df2
 # print(df2)
 
-#uzupełnienie danych
-#TODO
-
 df = pd.DataFrame(data={'x': [1, 2, 3, 4, 5], 'y': ['a', 'b', 'a', 'b', 'b']}, index=np.arange(5))
 #zadanie 1
 print(df.groupby('y').mean())
@@ -99,8 +96,6 @@ xs = np.linspace(0, 50, data2['length'].count())
 plt.plot(xs, y,'o')
 xs = np.linspace(0, 50, 200)
 density = stats.gaussian_kde(data2['length'])
-density.covariance_factor = lambda : .25
-density._compute_covariance()
 plt.plot(xs, density(xs), label="gęstość")
 plt.legend(loc='upper right')
 plt.show()

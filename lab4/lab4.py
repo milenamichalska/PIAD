@@ -15,15 +15,15 @@ def discretizeSinus(f, Fs):
     plt.plot(x, y)
     plt.show()
 
-# discretizeSinus(10, 20)
+discretizeSinus(10, 20)
 # discretizeSinus(10, 21)
 # discretizeSinus(10, 30)
 # discretizeSinus(10, 45)
 # discretizeSinus(10, 50)
-# discretizeSinus(10, 100)
+discretizeSinus(10, 100)
 # discretizeSinus(10, 200)
-# discretizeSinus(10, 250)
-# discretizeSinus(10, 1000)
+discretizeSinus(10, 250)
+discretizeSinus(10, 1000)
 
 #Twierdzenie o próbkowaniu, twierdzenie Nyquista–Shannona
 #Częstotliwość sygnału nie powinna przekraczać połowy częstotliwości próbkowania.
